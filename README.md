@@ -40,7 +40,7 @@ To run and edit First Website v2 locally, you'll need:
 
 2. **View the Website:**
 
-    - You should see the updated website interface with the new design and functionality as per the HTML, CSS, and JavaScript files.
+    - You should see the updated website interface with the new design and functionality as per the HTML (with JavaScript) and CSS files.
 
 3. **Development Mode:**
 
