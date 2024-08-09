@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PJs Webseite</title>
+<meta name="author" content="Paul Rehbein">
+<meta name="copyright" content="Copyright Paul-Rehbein">
+<meta name="description" content="Projekt Webseite Praxistraining">
+<meta name="keywords" content="HTML, CSS, GIBB">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body style="background-image: url('./bildandere2.jpg');">
+
+<script> 
+function logout() {
+  localStorage.setItem("loggedIn", false);
+  window.location.href = "login.html";
+}</script>
+  <header>
+    <div class="row2">
+        <img class="logo" src="bildlogo.png" alt="Logo" onclick="window.location.href = 'index.html'">
+      <nav>
+          <a onclick="window.location.href = 'index.html'">Home</a>
+          <a onclick="window.location.href = 'steckbrief.html'">Steckbrief</a>
+          <a onclick="window.location.href = 'uebermich.html'">Über mich</a>
+          <a onclick="window.location.href = 'werdegang.html'">Werdegang</a>
+          <a onclick="window.location.href = 'andere.html'">Andere</a>
+        <div class="animation start-andere"></div>
+      </nav>
+    </div>
+  </header>
+
+<div class="row">
+  <div class="columnstandart"></div>
+  <div class="columnandere" id="columnandere">
+    <h1>Andere<br></h1>
+    <button onclick="window.location.href = '../index.html';">Klassenseite</button>
+    <button id="logoutBtn" onclick="logout()">Ausloggen</button>
+    <button onclick="window.location.href = 'formulare.html';">Formular</button>
+    <!--Siehe Änderungsantrag <button onclick="window.location.href = 'https://selbst programmiertesspiel.com';">selbst programmiertesspiel</button>-->
+    <h5>Webseite Projekt von Paul Rehbein für Praxistraining</h5>
+  </div>
+  <!--<img class="imgstartseite" src="bildandere2.jpg" alt="Gamingtisch">-->
+</div>
+
+<footer>
+  <h4>©COPYRIGHT 2022 Paul Rehbein - All Rights Reserved</h4>
+  <button style="color: white; margin-top: -15px;" onclick="window.location.href = 'https://twitter.com/coolzumjax';">Twitter</button>
+  <button style="color: white; margin-top: -15px;" onclick="window.location.href = 'https://www.tiktok.com/@coolzumjax';">Tik Tok</button>
+  <button style="color: white; margin-top: -15px;" onclick="window.location.href = 'https://www.snapchat.com/add/destroyer_3053';">Snapchat</button>
+  <button style="color: white; margin-top: -15px;" onclick="window.location.href = 'https://www.instagram.com/coolzumjax';">Instagram</button>
+</footer>
+
+</body>
+</html>

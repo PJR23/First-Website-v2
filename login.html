@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="author" content="Paul Rehbein">
+    <meta name="copyright" content="Copyright Paul-Rehbein">
+    <meta name="description" content="Projekt Webseite Praxistraining">
+    <meta name="keywords" content="HTML, CSS, GIBB">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+  </head>
+  <body style="background-image: url('./bildlogin.png');">
+    <div class="login-container">
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="button" value="Login" onclick="validateForm()">
+      </form> 
+    </div>
+    <script>
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username == "1" && password == "1") {
+          alert("Login erfolgreich!");
+          localStorage.setItem("loggedIn", true);
+          window.location.href = "index.html";
+        } else {
+          alert("Falscher Benutzername oder Passwort!");
+        }
+      }
+    </script>
+  </body>
+</html>

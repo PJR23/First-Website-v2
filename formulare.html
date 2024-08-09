@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PJs Webseite</title>
+<meta name="author" content="Paul Rehbein">
+<meta name="copyright" content="Copyright Paul-Rehbein">
+<meta name="description" content="Projekt Webseite Praxistraining">
+<meta name="keywords" content="HTML, CSS">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body class="bodyform">
+    <script>
+        function checkLogin() {
+            if (localStorage.getItem('loggedIn') !== 'true') {
+                window.location.href = 'login.html';
+            }
+        }
+        checkLogin();
+    </script>
+    <button style="width: 10%; border-left: 10px; "onclick="window.location.href = 'index.html';">Home</button>
+    <form action="mailto:youremail@example.com" method="post">
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname"><br>
+        
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname"><br>
+        
+        <label for="street">Strasse:</label>
+        <input type="text" id="street" name="street"><br>
+        
+        <label for="plz">PLZ:</label>
+        <input type="text" id="plz" name="plz"><br>
+        
+        <label for="city">Ort:</label>
+        <input type="text" id="city" name="city"><br>
+        
+        <input type="submit" value="Senden">
+        <input type="reset" value="Zurücksetzen">
+    </form>
+</body>
+</html>
